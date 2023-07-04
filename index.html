@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="inscription.css">
+    <script src="inscription.js" defer ></script>
+</head>
+<body>
+
+<fieldset>
+    <legend>Formulaire d'inscription</legend>
+    <form id="form" >
+        
+            <img id="profile" src="image/png-transparent-user-profile-computer-icons-login-consultant-others-removebg-preview (1).png" alt="">
+
+        
+        <div class="block">
+            <div class="column1">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom">
+                <span id="codeErreur_nom"></span>
+    
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" >
+                <span id="codeErreur_prenom"></span>
+                
+    
+                <label for="telephone">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" >
+                <span id="codeErreur_tel"></span>
+                <!-- <audio id="son" src="son/Windows error.mp3"></audio> -->
+    
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email">
+                <span id="codeErreur_mail"></span>
+            </div>
+    
+            <div class="column2">
+                <label for="age">Âge :</label>
+                <input type="number" id="age" name="age">
+                <span id="codeErreur_age"></span>
+    
+                <label for="promotion">Promotion :</label>
+                <input type="text" id="promotion" name="promotion">
+                <span id="codeErreur_prom"></span>
+    
+                <label for="naissance">Date de naissance :</label>
+                <input type="date" id="naissance" name="naissance">
+                <span id="codeErreur_naissance"></span>
+    
+                <label for="annee_certification">Année de certification :</label>
+                <input type="number" id="annee_certification" name="annee_certification">
+                <span id="codeErreur_annee"></span>
+            </div>
+        </div>
+        <!-- <div class="codeAdmin">
+            <label for="Code_administrateur">Code-administrateur :</label>
+            <input type="text" id="Code_administrateur" name="Code_administrateur" required>
+        </div> -->
+        <input id="file" type="file" accept="image/" name="image"  style="display: none;">
+        <div >
+            <input  id="ButtonClic"  type="button" onclick="onSubmit()" value="Enregistrer">
+        </div>
+        
+    </form>
+</fieldset>
+</body>
+</html>

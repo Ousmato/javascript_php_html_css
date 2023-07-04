@@ -1,0 +1,61 @@
+.container{
+    display: grid;
+    margin: 0px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgb(255, 81, 0),40%, 
+    rgb(8, 8, 8));
+    perspective: 7000px;
+   
+}
+
+.container_1{
+    margin: 10px;
+    height: fit-content;
+    display: flex;
+    position: relative;
+    background: #ebece2;
+    border-radius: 10px;
+    transform: rotateX(1deg); /* Applique une rotation sur l'axe Y */
+    transition:cubic-bezier(0.215, 0.610, 0.355, 1);
+   
+   
+}
+
+.container_1:hover{
+    transform: rotateX(30deg);
+    box-shadow: 4px 4px 20px rgb(3, 3, 3);
+}
+
+.icon_info{
+height: 60%;
+
+width: 20px;
+position: absolute;
+right: 0;
+top: 0;
+
+}
+
+.icon_info img{
+color: white;
+height: 30px;
+
+}
+.nom_prenom{
+    margin-left: 20%;
+    font-weight: bold;
+    
+}
+
+.cercl_img{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 7px 7px 10px;
+    background-color: blanchedalmond;
+}
+
+.cercl_img img{
+    height: 100px;
+    width: 100px;
+}

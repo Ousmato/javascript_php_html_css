@@ -1,0 +1,186 @@
+:root{
+    --couleur-orange: #ff7301;
+    --couleur-noire: #000000;
+    --couleur-blanche: #ffffff;
+    --couleur-gris: #b4b0b0;
+}
+
+
+
+body{
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+background-image: linear-gradient(to right, rgba(255, 255, 255)40%, rgba(255, 255, 255, 0.24)),url(image/font.jpg);
+}
+
+/*
+header{
+    height: 140px;
+    width: 100;
+    margin: -18px 0px;
+    color: #f1f1f1;
+background-image: linear-gradient(to top, var(--couleur-blanche),45%, var(--couleur-noire));
+}
+
+
+
+.nav ul li {
+   justify-content: center;
+
+    
+}
+img {
+    height: 80px;
+}
+.logo{
+    float: right;
+}
+
+.menu ul li a{
+    color: #f1f1f1;
+    letter-spacing: 1rem;
+}
+.menu ul li a:hover{
+    color: rgb(5, 5, 5);
+    text-decoration: underline;
+}
+.menu {
+    float: right;
+    padding: 35px;
+    display: flex;
+}
+.menu li a{
+    text-decoration: none;
+
+}
+
+.input[type="search"]{
+    font-size: 17px;
+    float: right;
+    
+}
+/* milieux contenu*/
+.container{
+min-height: 150vh;
+}
+h1 {
+    background-image: linear-gradient(to top, 
+    rgb(255, 102, 0),20%, var(--couleur-noire));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    margin-left: 40Px;
+    margin-top: 90px;
+    font-size: 70px;
+}
+
+.image{
+    height: 292px;
+    margin-left: 50px;
+}
+
+footer{
+    position: absolute;
+    height: 140px;
+    width: 100%;
+bottom: 0;
+    color: #f1f1f1;
+background-image: linear-gradient(to top, var(--couleur-noire),45%, 
+var(--couleur-blanche));
+
+}
+
+
+/*nav-bar*/
+.ik {
+    width: 30px;
+    margin-top: 20px;
+
+}
+.main-nalinks img{
+    width: 100px;
+    margin: 0px;
+}
+
+nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #f7f5f5;
+    box-shadow: inset 0px -1px 0px #c5c5c5;
+    height: 90px;
+}
+
+.main-nalinks{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+.nav-icon span{
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 400;
+    color: #333;
+}
+
+
+
+/* 
+{
+    margin: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    position: relative;
+    align-self: center;
+    font-weight: bold; 
+}*/
+
+    
+
+.navlinks-container{
+    flex-grow: 8;
+    text-align: center;
+    
+}
+
+.M{
+    margin: 0px 5%;
+    border:none;
+    background: transparent;
+
+
+}
+
+
+option a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3;
+    width: 100%;
+    height: 1px;
+   transform: scale(0);
+   transform-origin: left;
+   background: #333;
+   transition: transform 0.3s ease-out;
+}
+
+option a:hover::after{
+    transform: scaleX(1);
+}
+
