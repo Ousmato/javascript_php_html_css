@@ -25,7 +25,6 @@ document.getElementById("profile").addEventListener("click",e=>{
     }
     });
 
-
 // Définir la fonction "onSubmit"
 function onSubmit(){
     // Récupérer les références vers les champs du formulaire

@@ -2,9 +2,9 @@
     display: grid;
     margin: 0px;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgb(255, 81, 0),40%, 
-    rgb(8, 8, 8));
+    background: #ffffff;
     perspective: 7000px;
+    
    
 }
 
@@ -13,17 +13,16 @@
     height: fit-content;
     display: flex;
     position: relative;
-    background: #ebece2;
+    background: #f1f1f1;
     border-radius: 10px;
-    transform: rotateX(1deg); /* Applique une rotation sur l'axe Y */
-    transition:cubic-bezier(0.215, 0.610, 0.355, 1);
+    box-shadow: #504d4d 5px 3px 10px ;
+    
    
    
 }
 
 .container_1:hover{
-    transform: rotateX(30deg);
-    box-shadow: 4px 4px 20px rgb(3, 3, 3);
+    background: #f1f1f1;
 }
 
 .icon_info{
@@ -42,7 +41,7 @@ height: 30px;
 
 }
 .nom_prenom{
-    margin-left: 20%;
+    margin-left: 5%;
     font-weight: bold;
     
 }

@@ -17,7 +17,7 @@ if($_SERVER["REQUEST_METHOD"] === "GET") {
     
     }catch(PDOException $e){
         
-         // Gestion des erreurs de connexion à la base de données
+         // arret du programme
         die("connection failed: " . $e->getMessage());
     }
 }
