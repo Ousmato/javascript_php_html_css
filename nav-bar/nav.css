@@ -1,5 +1,3 @@
-body{
-}
 
 nav{
     position: relative;
@@ -8,7 +6,7 @@ nav{
     justify-content: flex-start;
     background: #f7f5f5;
     box-shadow: inset 0px -1px 0px #c5c5c5;
-    height: 90px;
+    height: auto;
 }
 
 
@@ -84,65 +82,3 @@ nav > .menu ul li:hover .sous{
     font-size: 12px;
 }
 
-.container{
-    display: grid;
-    margin: 0px;
-    height: 100%;
-    background: #f1f1f1; 
-   
-}
-
-.container_1{
-    margin: 4px;
-    height: fit-content;
-    display: flex;
-    position: relative;
-    background: #f1f1f1;
-    border-radius: 5px;
-    transition: all 0.5s;    
-    &:hover{
-        transform: scale(1.01);
-        box-shadow: #504d4d 5px 3px 10px ;
-    }
-   
-   
-}
-container_1
-
-.container_1:hover{
-    background: #f1f1f1;
-}
-
-.icon_info{
-height: 60%;
-
-width: 20px;
-position: absolute;
-right: 0;
-top: 0;
-
-}
-
-.icon_info img{
-color: white;
-height: 30px;
-
-}
-.nom_prenom{
-    margin-left: 5%;
-    font-weight: bold;
-    
-}
-
-.cercl_img{
-    margin: 10px;
-    height: 100px;
-    width: 100px;
-    box-shadow: 7px 7px 10px;
-    background-color: blanchedalmond;
-}
-
-.cercl_img img{
-    height: 100px;
-    width: 100px;
-}

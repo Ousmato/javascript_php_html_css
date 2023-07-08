@@ -79,8 +79,8 @@ function onSubmit(){
         return;
     }
 
-    //var expressionReguliere = /^(([^<>()[]\.,;:s@]+(.[^<>()[]\.,;:s@]+)*)|(.+))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
-    if(email.value==""){
+    var expressionReguliere = /^(([^<>()[]\.,;:s@]+(.[^<>()[]\.,;:s@]+)*)|(.+))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
+    if(!expressionReguliere.test(email.value)){
         document.getElementById("codeErreur_mail").innerHTML="Non valide";
         document.getElementById("email").style="border: 1px solid red;";
         var audio = new Audio();
@@ -136,7 +136,6 @@ function onSubmit(){
     connexion.open("POST","inscription.php");
 
     // Créer un objet FormData et ajouter les valeurs des champs du formulaire
-    formData = new FormData();
     formData = new FormData();
     formData.append(nom.name,nom.value);
     formData.append(prenom.name,prenom.value);
