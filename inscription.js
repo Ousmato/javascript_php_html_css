@@ -37,6 +37,7 @@ function onSubmit(){
     var naissance = document.getElementById("naissance");
     var annee_certification = document.getElementById("annee_certification");
     var file = document.getElementById("file");
+
     
     // Vérifier si aucun fichier n'est sélectionné
     if(file.value==""){
@@ -116,7 +117,7 @@ function onSubmit(){
         return;
   }
 
-    if(annee_certification.value=""||(annee_certification.value.length<4)|| (annee_certification.value.length>4)){
+    if((annee_certification.value!=2021)&& (annee_certification.value!=2022)&&(annee_certification.value!=2023)){
         document.getElementById("codeErreur_annee").innerHTML="Non valide";
         document.getElementById("annee_certification").style="border: 1px solid red;";
         var audio = new Audio();
@@ -124,6 +125,7 @@ function onSubmit(){
         audio.play();
         return;
     }
+    console.log(annee_certification.value);
 
     var audio = new Audio();
         audio.src = "son/success.mp3";

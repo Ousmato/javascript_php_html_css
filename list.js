@@ -32,6 +32,8 @@ connexion.onload=function(){
             var a = document.createElement("a");
             var img = document.createElement("img");
             img.src="icon/info-solid.svg";
+            
+            a.href="detail.html?info="+element.idApprenant+"";
             a.appendChild(img);
             container_1.appendChild(cercl_img);
             nom_prenom.appendChild(nom);
@@ -42,6 +44,9 @@ connexion.onload=function(){
             cercl_img.appendChild(image_ap);
             container_1.appendChild(icon_info);
             list.appendChild(container_1);
+            a.addEventListener("click",e=>{
+                sessionStorage.setItem("promo",pro);
+            });
             
         });
     }

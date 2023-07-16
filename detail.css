@@ -16,7 +16,7 @@
     transition: all 0.5s;    
     &:hover{
         transform: scale(1.01);
-        box-shadow: #504d4d 5px 3px 10px ;
+        box-shadow: #504d4d 5px 3px 10px;
     }
    
 }
@@ -49,12 +49,12 @@ height: 30px;
 .cercl_img{
     margin: 10px;
     height: 100;
-    width: 100%;
+    width: 60%;
     box-shadow: 7px 7px 10px;
     background-color: blanchedalmond;
 }
 
 .cercl_img img{
-    height: 100px;
+    height: 100;
     width: 100px;
 }

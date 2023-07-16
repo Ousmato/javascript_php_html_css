@@ -42,14 +42,15 @@ connexion.onload=function(){
             var icon_info = document.createElement("div");
             icon_info.className="icon_info";
             var a = document.createElement("a");
-            
+            a.href="list.html?pro="+sessionStorage.getItem("promo");
             
             var img = document.createElement("img");
-            img.src="icon/info-solid.svg";
+            img.src="icon/arrow-rotate-left-solid.svg";
             a.appendChild(img);
             container_1.appendChild(cercl_img);
             nom_prenom.appendChild(matricule);
             nom_prenom.appendChild(prenom);
+            nom_prenom.appendChild(nom);
             nom_prenom.appendChild(Telelephone);
             nom_prenom.appendChild(email);
             nom_prenom.appendChild(age);
@@ -60,6 +61,7 @@ connexion.onload=function(){
             cercl_img.appendChild(image_ap);
             container_1.appendChild(icon_info);
             list_detail.appendChild(container_1);
+            
             
         });
     }
